@@ -1,0 +1,7 @@
+= Creedengo commons
+
+The commons provide elements that are shared between most Creedengo plugins, including:
+
+* 📚 documentation: you can browse the navigation on the left for more information;
+* 🛠️ tools: browse the documentation for each tool by clicking this link.
+// FIXME write the tools description
