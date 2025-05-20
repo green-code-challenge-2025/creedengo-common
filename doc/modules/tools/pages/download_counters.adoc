@@ -1,0 +1,45 @@
+= Download Counters Script
+
+This script retrieves the download counts of a list of repositories from the GitHub API.
+
+== Prerequisites
+
+* Bash
+* `curl`
+* `jq` (for parsing JSON responses)
+
+== Setup
+
+. Install `jq` if you don't have it already:
++
+[source,bash]
+----
+sudo apt-get install jq
+----
+
+. Obtain a GitHub personal access token with the `repo` or `public_repo` permission:
+
+.. Go to [GitHub Personal Access Tokens](https://github.com/settings/tokens).
+.. Click on **Generate new token**.
+.. Give your token a descriptive name.
+.. Select the `repo / public_repo` scope to grant the necessary permissions.
+.. Click *Generate token*.
+.. Copy the generated token and save it securely.
+
+== Usage
+
+. Clone the repository or download the script.
+. Open a terminal and navigate to the directory containing the script.
+. Run the script:
++
+[source,bash]
+----
+bash count.sh <github_token>
+----
+
+== Example
+
+[source,bash]
+----
+bash count.sh ghp_yourGitHubTokenHere
+----
