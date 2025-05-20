@@ -1,6 +1,8 @@
 = Download Counters Script
 
-This script retrieves the download counts of a list of repositories from the GitHub API.
+== Purpose
+
+This script retrieves the download counts of a list of Creedengo repositories from the GitHub API.
 
 == Prerequisites
 
@@ -10,15 +12,10 @@ This script retrieves the download counts of a list of repositories from the Git
 
 == Setup
 
-. Install `jq` if you don't have it already:
-+
-[source,bash]
-----
-sudo apt-get install jq
-----
+. Install `jq` if it isn't available on your machine yet. +
+Check https://jqlang.org/download/[`jq`'s official download page] to find the solution most appropriate to your case.
 
 . Obtain a GitHub personal access token with the `repo` or `public_repo` permission:
-
 .. Go to [GitHub Personal Access Tokens](https://github.com/settings/tokens).
 .. Click on **Generate new token**.
 .. Give your token a descriptive name.

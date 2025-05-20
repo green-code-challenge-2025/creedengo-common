@@ -5,40 +5,53 @@
 === Rules Tagging system
 
 Add one new tag to a list of rules from `SONAR_RULES_REUSED.md` (using SonarQube API).
-Why ? because maybe some original SonarQube rules are already ready for being part of this plugin
+
+Why? Because maybe some original SonarQube rules are already ready for being part of this plugin.
 
 === Creedengo Quality Profile
 
 Add one new Profile by language inherited from SonarWay (using SonarQube API).
+
 Why ?
 
-* we must create a custom Profile to use new eco-design rules from creedengo plugins
-* the new profile is inherited from SonarWay to keep natives SonarWay rules also
-The script attach the new rules with the new quality profile.
+* We must create a custom Profile to use new eco-design rules from Creedengo plugins.
+* The new profile is inherited from SonarWay to keep natives SonarWay rules also.
+The script attaches the new rules with the new quality profile.
 The new profile becomes the default profile for the language.
 
 == Requirements
 
-* Sonar installed
-** add new token in personal account settings to communicate with Sonar API ("user token" type)
-** Got *'Admininister: Quality Profiles'* global permission on your account.
-* Check `_config.sh` file :
-** debug mode (`DEBUG` variable) : 0 to disable, 1 to enable
-** simulation mode (`SIMULATION` variable) : 0 to disable, 1 to enable
-** Sonar token (`SONAR_TOKEN` variable) : put here the new added token previously
-** Sonar URL (`SONAR_URL` variable) : put here your custom Sonar URL ("http://localhost:9000" by default)
-** name of tag to add (`TAG_ECODESIGN` variable) : the name of the new tag to add to a list of rules
-** file path to `SONAR_RULES_REUSED.md` (`FILEPATH_SONAR_RULES_REUSED` variable) : filepath in the local folder. Contains all rules.
-** name of profile to add (`PROFILE_ECODESIGN` variable) : the name of the new profile to add for each language
-** language keys list (string format separated with one comma) (`PROFILES_LANGUAGE_KEYS` variable) : specify here the list of all keys language that you want to add the new creedengo quality profile
-** profiles set as default (`IS_PROFILE_ECODESIGN_DEFAULT` variable) : 1 if we want to set created profiles as default profile for each language, 0 if we don't want
+* SonarQube installed
+** Got *'Admininister: Quality Profiles'* global permission on your account
 
-== Local develop Environment
+== Setup
 
-Differents environment have been used:
+=== SonarQube
 
-* bash 3.2 on MacOS with extra jq package (`brew install jq`)
-* Ubuntu 20.04.4 LTS (bash 5.0.17(1)-release) with extra jq package (`sudo apt install jq`)
+. Add a new token in personal account settings to communicate with Sonar API ("user token" type)
+
+. Check `_config.sh` file:
++
+[options="header",cols="~h,~m,~"]
+|===
+|Setting |Variable |Values
+|Debug mode |DEBUG |`0` to disable, `1` to enable
+|Simulation mode |SIMULATION |`0` to disable, `1` to enable
+|Sonar token |SONAR_TOKEN |the token generated in the previous step
+|Sonar URL |SONAR_URL |the URL to your SonarQube instance (default: `http://localhost:9000`)
+|Name of the tag to add |TAG_ECODESIGN |the name of the new tag to add to a list of rules
+|File path to `SONAR_RULES_REUSED.md` |FILEPATH_SONAR_RULES_REUSED |filepath in the local folder, contains all rules
+|Name of the profile to add |PROFILE_ECODESIGN |the name of the new profile to add for each language
+|Language keys list |PROFILE_LANGUAGE_KEYS |the list of all languages to add the new Creedengo quality profile to (string format, separated with one comma)
+|Profiles set as default |IS_PROFILE_ECODESIGN_DEFAULT |`1` for the newly created profiles to be set as default for each language, `0` to not change the default profiles
+|===
+
+== Local development environment
+
+Different environments have been used:
+
+* bash 3.2 on MacOS with extra `jq` package (`brew install jq`)
+* Ubuntu 20.04.4 LTS (bash 5.0.17(1)-release) with extra `jq` package (`sudo apt install jq`)
 
 == Concepts
 
@@ -54,15 +67,16 @@ Differents environment have been used:
 - ... create custom quality profile
 - ... change parent profile
 - ... get profile key
-- ... activate existing rules associated with mentionned tag
+- ... activate existing rules associated with mentioned tag
 
 === Tags modifications
 
-SonarQube `systags`` are not editable from api call (it seems to be nativally fullfilled with SonarQube installation)
-Tags array seems to be the editable part. It's editable from :
+SonarQube's `systags` are not editable from API (it seems to be natively fulfilled with SonarQube installation).
+Tags array seems to be the editable part.
+It's editable from:
 
-* Sonar UI usage
-* Sonar API calls
+* SonarQube's UI;
+* SonarQube's API.
 
 == Algorithm
 
@@ -72,11 +86,10 @@ Tags array seems to be the editable part. It's editable from :
 * check if new tag to add (from config file) already exists on systags array or tags array
 * add new tag to all existing tags if necessary
 
-Files :
-
-- `check_tags.sh` : read tags for all listed rules
-- `clean_tag.sh` : delete specified tag from all listed rules
-- `install_tag.sh` : add specified tag to all listed rules
+.Files
+* `check_tags.sh`: read tags for all listed rules
+* `clean_tag.sh`: delete specified tag from all listed rules
+* `install_tag.sh`: add specified tag to all listed rules
 
 === Profile script
 
@@ -84,13 +97,12 @@ Files :
 * change parent profiles with "Sonar Way"
 * activate existing rules tag by `TAG_ECODESIGN` variable to the custom profile
 
-Files :
+.Files
+- `install_profile.sh`: create new custom profile
 
-- `install_profile.sh` : create new custom profile
+== How does it work?
 
-== How does it work ?
-
-* change configuration in `_config.sh` file : check requirements above
+* change configuration in `_config.sh` file: check requirements above
 * launch `check_tags.sh` to control your rules and tags
 * launch `install_tags.sh` to add custom tag to your rules
 * launch `check_tags.sh` again to control your rules and tags
@@ -98,9 +110,11 @@ Files :
 
 == Contributing
 
-**You want to add new pre-existing rule from Sonar ?**
+**You want to add new pre-existing rule from Sonar?**
 
-* You have to find the sonar key from **"RULES"** view on Sonarqube
-* adding a new line to `SONAR_RULES_REUSED.md` with this key
-* add references to justify this value
-* Create a Pull Request following =CONTRIBUTING.md
+You have to:
+. find the sonar key from **"RULES"** view on Sonarqube;
+. adding a new line to `SONAR_RULES_REUSED.md` with this key;
+. add references to justify this value;
+. create a Pull Request following `CONTRIBUTING.md`.
+// FIXME redirect to CONTRIBUTING in doc

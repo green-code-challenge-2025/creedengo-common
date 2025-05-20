@@ -1,47 +1,39 @@
 = Local environment checker tool
+:navtitle: Local environment checker
 
 == Purpose
 
-Tool to check local development environment.
-Some requirements are mandatory (tools and versions) before beginning development on the plugin.
+This tool was designed to ensure that a local environment development matches all mandatory requirements
+before a developer can start working on the code of a Creedengo plugin.
 
 == Requirements
 
-Tool was created on Mac OSx environment.
-Please feel free to report any issues found.
+This tool was created on Mac{nbsp}OS{nbsp}X environment.
+Please feel free to report any issue.
 
-Tested on :
+Tested on:
 
-- macOS : 12.6.3 / 13.1 / 13.2 / M1 pro 13.0.1
-- Ubuntu : 22.04.1 LTS
-- Windows : 10 Famille
+* 🍎 *MacOS*: 12.6.3 / 13.1 / 13.2 / M1 pro 13.0.1
+* 🐧 *Ubuntu*: 22.04.1 LTS
+* 🪟 *Windows*: 10 Famille
 
 == Files
 
-For Mac OSX and Linux :
-
-- `_core.sh` : file containing core functions used by checker tool
-- `check_requirements.sh` : tool checker for Mac OS and Ubuntu
-
-For Windows :
-
-- `check_requirements.bat` : tool checker for Windows
-
-Common files:
-
-- `config.txt` : file containing the configuration of checker tool (tools, versions, debug)
+[horizontal]
+* `_core.sh` 🍎🐧: file containing core functions used by checker tool (MacOS / Linux)
+* `check_requirements.sh` 🍎🐧: tool checker (MacOS / Linux)
+* `check_requirements.bat` 🪟: tool checker (Windows)
+* `config.txt` 🍎🐧🪟: file containing the configuration of checker tool (tools, versions, debug)
 
 == How does it work?
 
-- [OPTIONAL] change the configuration in `config.txt` file
+[TIP]
+You can change the configuration in `config.txt` before running the tool if you wish.
 
-For Mac OSX and Linux :
-
-- launch `check_requirements.sh` to check the local environment
-
-For Windows :
-
-- launch `check_requirements.bat` to check the local environment
+* 🍎🐧 MacOS / Linux:
+.. Run `check_requirements.sh` to check the local environment.
+* 🪟 Windows:
+.. Run `check_requirements.bat` to check the local environment.
 
 == Screenshots
 
