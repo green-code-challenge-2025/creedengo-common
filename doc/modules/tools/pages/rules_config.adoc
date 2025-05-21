@@ -116,5 +116,5 @@ You have to:
 . find the sonar key from **"RULES"** view on Sonarqube;
 . adding a new line to `SONAR_RULES_REUSED.md` with this key;
 . add references to justify this value;
-. create a Pull Request following `CONTRIBUTING.md`.
+. create a Pull Request following `contributing.adoc`.
 // FIXME redirect to CONTRIBUTING in doc

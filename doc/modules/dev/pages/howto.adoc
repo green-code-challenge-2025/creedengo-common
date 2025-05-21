@@ -246,7 +246,7 @@ This step is done on the next release of the plugin (example: version N).
 
 . Upgrade the rule implementation to add deprecation information : in plugin repository containing the rule implementation, add a new `@DeprecatedRule` annotation on the rule class
 . Upgrade rules documentation:
-.. In plugin repository containing the rule implementation, in `RULES.md` file, move rule line from standard rules array to deprecated rules array.
+.. In plugin repository containing the rule implementation, in `rules.adoc` file, move rule line from standard rules array to deprecated rules array.
 .. In `creedengo-rules-specification` repository, add deprecation to current rule.
 
 Thus in next version of plugin, the rule will be still present but displayed as deprecated in SonarQube UI.
@@ -260,7 +260,7 @@ This step is done on release N+2.
 ... delete the rule's class, clean all references to the rule;
 ... delete the related unit tests
 .. In the plugin test project repository, clean the rule test classes.
-. Upgrade rules documentation: in the plugin repository containing the rule implementation, in `RULES.md` file, mark the rule as deleted.
+. Upgrade rules documentation: in the plugin repository containing the rule implementation, in `rules.adoc` file, mark the rule as deleted.
 
 ==== HOWTO manage license inside code
 
@@ -318,7 +318,7 @@ This is the use case for all plugin repositories except `creedengo-rules-specifi
 . IF *new wanted release* is a *major* or *minor* version (`X` or `Y` in `X.Y.Z`)
 .. **THEN** **modify the old version** to the new version in **all XML/YML files**
 .. **ELSE** **no modification** needed: the new corrective version (`Z` in `X.Y.Z`) will be automatic
-. **Update `CHANGELOG.md`** : add release notes for next release
+. **Update `changelog.adoc`** : add release notes for next release
 .. **Replace `Unreleased` title** with the new version like `Release X.Y.Z` and the date
 *** ... where `X.Y.Z` is the new release
 *** ... follow others examples

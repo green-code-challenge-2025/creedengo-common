@@ -17,7 +17,7 @@ And if you like the project (one of our repositories), but just don't have time 
 == Code of Conduct
 
 These projects and everyone participating in are governed by the
-xref:code-of-conduct.adoc[].
+xref:creedengo-common::code-of-conduct.adoc[].
 By participating, you are expected to uphold this code. Please report unacceptable behavior
 through https://green-code-initiative.org[the contact form].
 
@@ -25,7 +25,7 @@ through https://green-code-initiative.org[the contact form].
 == I Have a Question
 
 [NOTE]
-If you want to ask a question, we assume that you have read the available xref:starter-pack.adoc[].
+If you want to ask a question, we assume that you have read the available xref:creedengo-common:dev:starter-pack.adoc[].
 
 Before you ask a question, it is best to search for existing https://github.com/green-code-initiative/creedengo-common/issues[issues] that might help you (in the right repository).
 In case you have found a suitable issue and still need clarification, you can write your question in this issue.
@@ -55,7 +55,7 @@ Therefore, we ask you to investigate carefully, collect information and describe
 Please complete the following steps in advance to help us fix any potential bug as fast as possible.
 
 . Make sure that you are using the latest version.
-. Determine if your bug is really a bug and not an error on your side e.g. using incompatible environment components/versions (Make sure that you have read the xref:starter-pack.adoc[]).
+. Determine if your bug is really a bug and not an error on your side e.g. using incompatible environment components/versions (Make sure that you have read the xref:creedengo-common:dev:starter-pack.adoc[]).
 If you are looking for support, you might want to check <<question>>).
 . To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the bug tracker.
 . Also make sure to search the internet (including Stack Overflow) to see if users outside of the GitHub community have discussed the issue.
@@ -92,7 +92,7 @@ Following these guidelines will help maintainers and the community to understand
 ==== Before Submitting an Enhancement
 
 * Make sure that you are using the latest version.
-* Read the xref:starter-pack.adoc[] carefully and find out if the functionality is already covered, maybe by an individual configuration.
+* Read the xref:creedengo-common:dev:starter-pack.adoc[] carefully and find out if the functionality is already covered, maybe by an individual configuration.
 * Perform a search in Issue section of the right repository to see if the enhancement has already been suggested.
 If it has, add a comment to the existing issue instead of opening a new one.
 * Find out whether your idea fits with the scope and aims of the project.
@@ -117,13 +117,13 @@ When you create an issue, a template is provided.
 
 === How Do I Suggest a New Rule?
 
-. Check if a similar rule already exists (in `RULES.md` or in Sonarqube native rules list).
+. Check if a similar rule already exists (in `rules.adoc` or in Sonarqube native rules list).
 . If it doesn't exist, create a new issue in `creedengo` repository: choose `new rule template`.
 . Fill the template and submit the issue.
 
 === Your First Code Contribution
 
-Please check xref:starter-pack.adoc[]
+Please check xref:creedengo-common:dev:starter-pack.adoc[]
 
 === Improving the Documentation
 

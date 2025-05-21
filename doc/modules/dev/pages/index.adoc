@@ -1,4 +1,4 @@
-= Creedengo developers guides
+= Creedengo developer guides
 :navtitle: Developers
 // TODO make this a quick-access page, with easy to see tiles.
 

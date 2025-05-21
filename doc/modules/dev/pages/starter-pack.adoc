@@ -163,21 +163,21 @@ Many ways to do this:
 * *OR* go and give a hand to the https://github.com/green-code-initiative/creedengo-challenge/blob/main/spotters.md[spotters team], who will give you some rules to implement.
 
 [IMPORTANT]
-Before implementing a rule, please check if the rule is not already implemented in another language and the id already exists in `RULES.md` file or in `creedengo-rules-specifications` repository. If the rule is already implemented, please use the same id.
+Before implementing a rule, please check if the rule is not already implemented in another language and the id already exists in `rules.adoc` file or in `creedengo-rules-specifications` repository. If the rule is already implemented, please use the same id.
 
 ==== Check `Definition of Done` for new rule implementation
 
 For a new rule implementation, we strongly recommend you to follow this check-list:
 
-* [ ] Check if rule doesn't exist in our referential rules list yet (`RULES.md` file of `creedengo-rules-specifications` repository)
+* [ ] Check if rule doesn't exist in our referential rules list yet (`rules.adoc` file of `creedengo-rules-specifications` repository)
 * [ ] Create PR on the `creedengo-rules-specifications` repository to add the new rule definition
 ** [ ] To choose the new rule id:
-*** [ ] if rule is already existing in `RULES.md` file or in `creedengo-rules-specifications` module, please use the given rule id
-*** [ ] if rule doesn't already exist in `RULES.md` file or in `creedengo-rules-specifications` module, please use a random number between 1000 and 1500 (ex : "EC1289") and use it (later, you will be asked to change it)
+*** [ ] if rule is already existing in `rules.adoc` file or in `creedengo-rules-specifications` module, please use the given rule id
+*** [ ] if rule doesn't already exist in `rules.adoc` file or in `creedengo-rules-specifications` module, please use a random number between 1000 and 1500 (ex : "EC1289") and use it (later, you will be asked to change it)
 ** [ ] You can use SNAPSHOT version of `creedengo-rules-specifications` during your local rule implementation to go forward
 * [ ] Implement rule in your local specific language repository with a reference to local SNAPSHOT of `creedengo-rules-specifications` (previously, install it locally with maven command)
 ** [ ] Write Unit tests (and maximize code coverage)
-** [ ] Update `CHANGELOG.md` file (inside `Unreleased` section)
+** [ ] Update `CHANGELOG.adoc` file (inside `Unreleased` section)
 * [ ] Create PR on the real test project to add a triggering case (check <<start-local-environment>>))
 ** [ ] WARNING Java and Python plugin: check above (`Specific real test project for Python and Java plugin`)
 * [ ] Fix potential SonarCloud issues / out-of-date warnings (report is sent after creating PR)
@@ -186,7 +186,7 @@ For a new rule implementation, we strongly recommend you to follow this check-li
 ==== Test your rule implementation
 
 - First kind of test : Unit tests (please check `Definition of Done` above)
-- Second kind of test : End-to-End tests in a real local environment (please check `Definition of Done` above and [local procedure](https://github.com/green-code-initiative/creedengo-common/blob/main/doc/starter-pack.md#start-local-environment) )
+- Second kind of test : End-to-End tests in a real local environment (please check `Definition of Done` above and https://github.com/green-code-initiative/creedengo-common/blob/main/doc/starter-pack.md#start-local-environment[local procedure] )
 
 [NOTE]
 Each rule needs to have scripts in a specific language (i.e. Python, Rust, JS, PHP and JAVA) in order to test directly inside Sonarqube that the rule has been implemented.

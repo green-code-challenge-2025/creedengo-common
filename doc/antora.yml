@@ -5,3 +5,4 @@ nav:
   - modules/users/nav.adoc
   - modules/dev/nav.adoc
   - modules/tools/nav.adoc
+  - modules/ROOT/nav.adoc
