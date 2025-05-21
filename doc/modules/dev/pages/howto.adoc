@@ -116,6 +116,7 @@ image::security-tab.png[]
 
 Instead of login+password authentication, this token can now be used as value for `sonar.login` variable when needed (examples: call sonar scanner to send metrics to SonarQube, on use internal tools...).
 
+[[initialize-default-profile-for-creedengo-plugins]]
 ====== Initialize default profiles for `creedengo` plugins
 
 . Use the tool `install_profile.sh` in `creedengo-common` repository (inside directory `tools/rules_config`). +
