@@ -16,7 +16,7 @@ This script retrieves the download counts of a list of Creedengo repositories fr
 Check https://jqlang.org/download/[`jq`'s official download page] to find the solution most appropriate to your case.
 
 . Obtain a GitHub personal access token with the `repo` or `public_repo` permission:
-.. Go to [GitHub Personal Access Tokens](https://github.com/settings/tokens).
+.. Go to https://github.com/settings/tokens[GitHub Personal Access Tokens].
 .. Click on **Generate new token**.
 .. Give your token a descriptive name.
 .. Select the `repo / public_repo` scope to grant the necessary permissions.
