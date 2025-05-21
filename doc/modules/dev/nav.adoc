@@ -1,6 +1,5 @@
-* Developers
-** xref:contributing.adoc[]
-** xref:code-of-conduct.adoc[]
-** xref:starter-pack.adoc[]
-** xref:howto.adoc[]
-** xref:code-style.adoc[]
+* xref:index.adoc[]
++
+--
+include::partial$dev-guides-list.adoc[]
+--

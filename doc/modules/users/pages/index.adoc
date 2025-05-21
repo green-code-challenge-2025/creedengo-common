@@ -1,0 +1,5 @@
+= Creedengo user documentation
+:navtitle: Users
+// TODO make this a quick-access page, with easy to see tiles.
+
+include::partial$user-guides-list.adoc[]

@@ -1,2 +1,5 @@
-* Users
-** xref:faq.adoc[]
+* xref:index.adoc[]
++
+--
+include::partial$user-guides-list.adoc[]
+--

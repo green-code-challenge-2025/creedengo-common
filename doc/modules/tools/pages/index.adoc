@@ -3,4 +3,5 @@
 
 Below are the common tools provided for Creedengo development:
 
+// TODO make this a quick-access page, with easy to see tiles.
 include::partial$tools-list.adoc[]

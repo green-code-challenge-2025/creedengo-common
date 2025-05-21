@@ -1,4 +1,5 @@
 = Creedengo commons
+// TODO make this a quick-access page, with easy to see tiles.
 
 The commons provide elements that are shared between most Creedengo plugins, including:
 
