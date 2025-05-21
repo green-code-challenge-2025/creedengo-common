@@ -7,7 +7,7 @@ It is primarily intended for the plugin team but can be used as a reference by a
 
 The structure of this document is based on the https://google.github.io/styleguide/javaguide.html[Google Java Style] reference and https://github.com/spring-projects/spring-framework/wiki/Code-Style[Springframework Code Style].
 
-[CAUTION]
+[NOTE]
 This guide is a work in progress.
 
 == Source File Basics
@@ -18,7 +18,7 @@ Source files must be encoded using `UTF-8`.
 
 === Indentation
 
-[CAUTION,note=Work in progress]
+[NOTE,note=Work in progress]
 To do
 
 == Source file structure
@@ -33,7 +33,7 @@ Exactly one blank line separates each of the above sections.
 
 === Import statements
 
-[CAUTION,note=Work in progress]
+[NOTE,note=Work in progress]
 To do
 
 === Java source file organization
@@ -334,9 +334,9 @@ Use AssertJ for assertions.
 
 Use the BDD Mockito support.
 
-=== Some rules from experience
+== Some rules from experience
 
-==== Unit tests
+=== Unit tests
 
 Unit test are mandatory. If you can, use Test Driven Development method to write your tests.
 Check coverage of your tests with SonarQube integration of our code.

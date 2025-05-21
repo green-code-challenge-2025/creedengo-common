@@ -1,6 +1,6 @@
 = Frequently Asked Questions
 
-== I'm using default `Sonar Way` rules (with default `Sonar Way` profile). When I install one of Creedengo plugins (ex : `creedengo-java plugin`), are new Creedengo rules installed? How does the plugin do this ?
+== I'm using default `Sonar Way` rules (with default `Sonar Way` profile). When I install a Creedengo plugin, are the new Creedengo rules applied?
 
 When a Creedengo plugin is installed by the marketplace, the rules are immediately available on SonarQube.
 You can find them if you go to "rules" tab, and select rules with tag `eco-design`.
