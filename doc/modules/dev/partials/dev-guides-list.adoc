@@ -1,4 +1,3 @@
-* xref:contributing.adoc[]
 * xref:starter-pack.adoc[]
 * xref:howto.adoc[]
 * xref:code-style.adoc[]

@@ -1,0 +1,83 @@
+= SonarQube plugins
+
+Creedengo's first implementation is as SonarQube plugins, which can be used to detect code smells through SonarQube's static analysis of your code.
+
+image::sonarqube-issue.webp[alt="Example of an issue highlighted in original code as shown by SonarQube"]
+
+== SonarQube plugins for ecodesign
+
+image::5ekko.webp[alt="Ekko logo"]
+
+Creedengo provides two kinds of plugins:
+
+* *Plugins for web/back-office (Java, JavaScript, PHP, Python)*.
+They use code smells described in the 2nd edition of the repository, published in September{nbsp}2015.
+You can find all the rules https://docs.google.com/spreadsheets/d/1nujR4EnajnR0NSXjvBW3GytOopDyTfvl3eTk2XGLh5Y/edit#gid=1386834576[here] (in French).
+The repository for web/back-office rules is link:{gci-github-organization}/creedengo-rules-specifications[green-code-initiative/creedengo-rules-specifications].
+
+* *Plugins for mobile (Android/iOS)*, using https://github.com/cnumr/best-practices-mobile[a set of code smells] theorised
+by Dr. Olivier Le Goaër.
+You can find this plugin in the repository link:{gci-github-organization}/ecoCode-android[green-code-initiative/ecoCode-android].
+
+== How a SonarQube plugin works
+
+Code is parsed to be transformed as an Abstract Syntax Tree (AST).
+The AST allows the scanner to access one or more nodes in the analyzed code.
+For example, it is then possible to access all `for` loops, to explore content etc.
+The plugin defines rules and checks whether the parsed AST is compliant.
+
+When it is not, an issue is raised and made available in SonarQube's UI.
+
+To better understand AST structure, you can use the https://astexplorer.net/[AST Explorer].
+
+== Supported languages
+
+Creedengo supports 7 technologies right now:
+
+* "Standard" plugins:
+** xref:creedengo-java::index.adoc[]
+** link:{gci-github-organization}/creedengo-javascript[JavaScript plugin] (⚠️ integration in documentation pending)
+** link:{gci-github-organization}/creedengo-php[PHP plugin] (⚠️ integration in documentation pending)
+** link:{gci-github-organization}/creedengo-python[Python plugin] (⚠️ integration in documentation pending)
+** link:{gci-github-organization}/creedengo-csharp[C# plugin] (⚠️ integration in documentation pending)
+
+* Mobile plugins:
+** link:{gci-github-organization}/ecoCode-android[Android plugin] (⚠️ integration in documentation pending)
+** link:{gci-github-organization}/creedengo-ios[iOS plugin] (⚠️ integration in documentation pending)
+
+== 🛒 Distribution
+
+The primary way to obtain Creedengo plugins is through the SonarQube Marketplace, accessible in the Administration  section.
+Alternatively, you can download them directly from the GitHub releases.
+
+[NOTE]
+The (then-"ecoCode") plugins were previously hosted on a single repository.
+We split it to one repository per plugin in December{nbsp}2023.
+Thus, the plugin should be retrieved from a repository or another depending on the wanted version.
+
+* Java plugin:
+** from 0.x to 1.4.3: link:{gci-github-organization}/creedengo-rules-specifications/releases[creedengo repository]
+** since 1.5.0: link:{gci-github-organization}/creedengo-java/releases[creedengo-java repository]
+* PHP plugin:
+** from 0.x to 1.3.1: link:{gci-github-organization}/creedengo-rules-specifications/releases[creedengo repository]
+** since 1.4.0: link:{gci-github-organization}/creedengo-php/releases[creedengo-php repository]
+* Python plugin:
+** from 0.x to 1.3.1: link:{gci-github-organization}/creedengo-rules-specifications/releases[creedengo repository]
+** since 1.4.0: link:{gci-github-organization}/creedengo-python/releases[creedengo-python repository]
+* Javascript plugin:
+** from 0.x to 1.3.0: link:{gci-github-organization}/creedengo-rules-specifications/releases[creedengo repository]
+** since 1.4.0: link:{gci-github-organization}/creedengo-javascript/releases[creedengo-javascript repository]
+* C# plugin: link:{gci-github-organization}/creedengo-csharp/releases[creedengo-csharp repository]
+* Android plugin: link:{gci-github-organization}/ecoCode-android/releases[creedengo-android repository]
+* iOS plugin: link:{gci-github-organization}/creedengo-ios/releases[creedengo-ios repository]
+
+== 🧩 SonarQube compatibility matrix (*OLD* `ecoCode` plugin)
+
+[options="header",columns="~,~,~"]
+|===
+|Plugins Version     |SonarQube version           |Java version
+|1.4+                |SonarQube 9.4.+ LTS to 10.1 |11 / 17
+|1.2.x, 1.3.x        |SonarQube 9.4.+ LTS to 10.0 |11 / 17
+|0.2.x, 1.0.x, 1.1.x |SonarQube 9.4.+ LTS to 9.9  |11 / 17
+|0.1.x               |SonarQube 8.9.+ LTS to 9.3  |11 / 17
+|===

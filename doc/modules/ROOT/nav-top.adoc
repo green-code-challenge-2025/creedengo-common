@@ -1,0 +1,3 @@
+* xref:sonarqube-plugins.adoc[]
+* xref:code-of-conduct.adoc[]
+* xref:contributing.adoc[]

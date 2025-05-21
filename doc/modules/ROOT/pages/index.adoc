@@ -1,7 +1,86 @@
-= Creedengo commons
-// TODO make this a quick-access page, with easy to see tiles.
+= Creedengo
+// TODO keep title for a11n, but hide it
 
-The commons provide elements that are shared between most Creedengo plugins, including:
++++
+<div align="center">
+<picture>
+<source media="(prefers-color-scheme: dark)" width="500" height="100" srcset="_images/creedengo_light.svg">
+<source media="(prefers-color-scheme: light)" width="500" height="100" srcset="_images/creedengo_dark.svg">
+<img alt="Creedengo logo" width="500" height="100" src="_images/creedengo_light.svg">
+</picture>
+<p><strong>A Green Code Initiative project</strong></p>
+</div>
++++
 
-* 📚 documentation: you can browse the navigation on the left for more information;
-* 🛠️ tools: browse the documentation for each tool by clicking xref:tools:index.adoc[this link].
+== About
+
+Creedengo is a collective project aiming to reduce environmental footprint of software at the code level.
+The goal of the project is to provide a list of static code analyzers to highlight code structures that may have a negative
+ecological impact: energy and resources over-consumption, "fatware," shortening terminals' lifespan, etc.
+
+// FIXME add link to rules doc
+Creedengo is based on evolving catalogs of good practices, for various technologies.
+A SonarQube plugin hen implements these catalogs as rules to scan your projects.
+
+[WARNING]
+This is still a very early-stage project.
+Any feedback or contribution will be highly appreciated.
+Please refer to xref:contributing.adoc[].
+
+image:https://img.shields.io/badge/License-GPLv3-blue.svg[link=https://www.gnu.org/licenses/gpl-3.0,alt="License GPLv3"]
+image:https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg[xref=creedengo::code-of-conduct.adoc]
+
+== 🤝 Contribution
+
+You are a technical expert, a designer, a project manager, a CSR expert, an ecodesign expert...
+
+You want to offer the help of your company, help us to organize, communicate on the project?
+
+You have ideas to submit to us?
+
+We are listening to you to make the project progress collectively, and maybe with you!
+
+WE NEED YOU! 🫵
+
+Here is the xref:creedengo:dev:starter-pack.adoc[].
+
+== 🤓 Main contributors
+
+Any question? We are here for you!
+First, create an issue, please.
+Then, if no answer, contact...
+
+* https://www.linkedin.com/in/jules-delecour-498680118/[Jules Delecour]
+* https://github.com/glalloue[Geoffrey Lalloué]
+* https://www.linkedin.com/in/julien-hertout-b1175449/[Julien Hertout]
+* https://www.linkedin.com/in/justin-berque-444412140[Justin Berque]
+* https://olegoaer.perso.univ-pau.fr[Olivier Le Goaër]
+* https://www.linkedin.com/in/david%E2%80%8E-de-carvalho-8b395284/[David De Carvalho]
+* https://www.linkedin.com/in/maximemalgorn/[Maxime Malgorn]
+* https://www.linkedin.com/in/gillesgrousset/[Gilles Grousset]
+* https://www.linkedin.com/in/vianney-de-bellabre/[Vianney De Bellabre]
+* https://www.linkedin.com/in/jcardon79/[Jérôme Cardon]
+* https://www.linkedin.com/in/johannaduigou/[Johanna Duigou]
+
+== 🧐 Core Team Emeriti
+
+Here we honor some no-longer-active core team members who have made valuable contributions in the past.
+
+* https://www.linkedin.com/in/maxime-dubois-%F0%9F%8C%B1-649a3a3/[Maxime Dubois]
+* Gaël Pellevoizin
+* https://github.com/NicolasDaviet[Nicolas Daviet]
+* https://github.com/fkotd[Mathilde Grapin]
+
+They have contributed to the success of Creedengo:
+
+* https://www.davidson.fr/[Davidson Consulting]
+* https://www.orange-business.com/[Orange Business]
+* https://www.snapp.fr/[Snapp']
+* https://www.univ-pau.fr/[Université de Pau et des Pays de l'Adour (UPPA)]
+* https://www.solocal.com/[Solocal] / https://www.pagesjaunes.fr/[PagesJaunes.fr]
+* https://www.capgemini.fr/[Capgemini]
+* https://www.accenture.com/[Accenture]
+
+They supported the project:
+
+* https://www.nouvelle-aquitaine.fr/[Région Nouvelle-Aquitaine]

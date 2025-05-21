@@ -1,0 +1,13 @@
+= Creedengo official resources
+:navtitle: Resources
+
+Below are the official resources associated to the Creedengo project (menu:Right click[Save image as] to download it).
+
+.Creedengo SVG logo for light background
+image::creedengo::creedengo_dark.svg[alt="Creedengo logo"]
+
+.Creedengo SVG logo for dark background
+image::creedengo::creedengo_light.svg[alt="Creedengo logo"]
+
+.Ekko, Creedengo's mascot
+image::creedengo::5ekko.webp[alt="Five heads of a polar bear, varying from sad to happy"]

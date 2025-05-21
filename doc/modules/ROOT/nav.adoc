@@ -1,1 +1,0 @@
-* xref:code-of-conduct.adoc[]
