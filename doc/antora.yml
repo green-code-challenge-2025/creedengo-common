@@ -2,4 +2,5 @@ name: creedengo-common # the slug used in URL
 title: Creedengo commons # prettier version for humans
 version: ~ # this module does NOT have versions
 nav:
+  - modules/dev/nav.adoc
   - modules/tools/nav.adoc

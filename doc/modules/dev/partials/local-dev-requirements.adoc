@@ -1,0 +1,6 @@
+- Docker: https://docs.docker.com/get-docker/
+- Docker compose: https://docs.docker.com/compose/install/
+- Java (JDK, and not only JRE, for Sonarqube plugin Development): https://www.java.com/fr/download/manual.jsp
+- Maven for Sonarqube plugin Development: https://maven.apache.org/download.cgi
+- Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+- `jq`: https://jqlang.org

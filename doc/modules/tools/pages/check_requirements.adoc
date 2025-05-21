@@ -13,15 +13,15 @@ Please feel free to report any issue.
 
 Tested on:
 
-* 🍎 *MacOS*: 12.6.3 / 13.1 / 13.2 / M1 pro 13.0.1
+* 🍎 *macOS*: 12.6.3 / 13.1 / 13.2 / M1 pro 13.0.1
 * 🐧 *Ubuntu*: 22.04.1 LTS
 * 🪟 *Windows*: 10 Famille
 
 == Files
 
 [horizontal]
-* `_core.sh` 🍎🐧: file containing core functions used by checker tool (MacOS / Linux)
-* `check_requirements.sh` 🍎🐧: tool checker (MacOS / Linux)
+* `_core.sh` 🍎🐧: file containing core functions used by checker tool (macOS / Linux)
+* `check_requirements.sh` 🍎🐧: tool checker (macOS / Linux)
 * `check_requirements.bat` 🪟: tool checker (Windows)
 * `config.txt` 🍎🐧🪟: file containing the configuration of checker tool (tools, versions, debug)
 
@@ -30,10 +30,14 @@ Tested on:
 [TIP]
 You can change the configuration in `config.txt` before running the tool if you wish.
 
-* 🍎🐧 MacOS / Linux:
+* 🍎🐧 macOS / Linux:
 .. Run `check_requirements.sh` to check the local environment.
 * 🪟 Windows:
 .. Run `check_requirements.bat` to check the local environment.
+
+[NOTE]
+If you install a new tool, you might need to restart your terminal/prompt before running the script again.
+(The `PATH` variable must be refreshed.)
 
 == Screenshots
 
