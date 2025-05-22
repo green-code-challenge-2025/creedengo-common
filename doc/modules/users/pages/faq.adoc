@@ -17,4 +17,4 @@ Finally use this new profile as "default" profile for the selected language or s
 [WARNING]
 The newly created profile will be set as the default profile for your language!
 
-. *OR* update one of your current used quality profiles to add the newly available Creedengo rules.
+* *OR* update one of your current used quality profiles to add the newly available Creedengo rules.
